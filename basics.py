@@ -3,8 +3,7 @@ def mean(x):
     x_mean = sum(x)/len(x)
     return x_mean
 
-def error(x):
-    """Chooses a number from a list of numbers"""
-    import random
-    x_error = random.choice(x)
-    return x_error
+def error(list, y):
+    """Subtracts an input value from a list of numbers"""
+    y_errors = [z - y for z in list]
+    return y_errors
