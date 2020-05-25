@@ -15,7 +15,6 @@ def roll_probability(sides=6, rolls=10, target=6, number_of_targets=3, simulatio
         if num_target_rolls >= number_of_targets:
             succesful_sim += 1
         i += 1
-    # print(succesful_sim)
     probability = succesful_sim / simulations
     print(str(probability * 100) + '% chance of a ' + str(sides) + '-sided die rolling a total of ' + str(number_of_targets) + ' "' + str(target) + '"s over ' + str(rolls) + ' rolls.')
 
