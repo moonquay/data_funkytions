@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 def dice(sides=6, rolls=10):
     """Rolling dice of x sides y times."""
     import random
@@ -8,7 +10,14 @@ def dice(sides=6, rolls=10):
         dice_rolls.append(roll_output)
     return dice_rolls
 
+dice_rolls = dice()
 
-print(dice())
+roll_counts = defaultdict(int)
+for roll in dice_rolls:
+    roll_counts[roll] += 1
+
+# print(roll_counts)
+# print(roll_counts[6])
+
 # print(dice(10))
 # print(dice(15))
