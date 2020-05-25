@@ -16,7 +16,7 @@ def roll_probability(sides=6, rolls=10, target=6, number_of_targets=3, simulatio
             succesful_sim += 1
         i += 1
     probability = succesful_sim / simulations
-    print(str(probability * 100) + '% chance of a ' + str(sides) + '-sided die rolling a total of ' + str(number_of_targets) + ' "' + str(target) + '"s over ' + str(rolls) + ' rolls.')
+    print("There's about a " + str(probability * 100) + '% chance of a ' + str(sides) + '-sided die rolling a total of ' + str(number_of_targets) + ' "' + str(target) + '"s over ' + str(rolls) + ' rolls.')
 
 roll_probability(sides=6, rolls=10, target=6, number_of_targets=7, simulations=5000)
 roll_probability(sides=250, rolls=198, target=15, number_of_targets=3, simulations=5000)
